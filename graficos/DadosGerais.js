@@ -1,0 +1,1 @@
+const url ="https://raw.githubusercontent.com/GabzinhoHD/Banco-de-dados-EX/refs/heads/main/entrevista.json"
