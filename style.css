@@ -67,7 +67,7 @@ nav a:hover {
 span{
     font-family: var(--font-titulo);
     color: var(--azul-escuro);
-    font-size: 40px;
+    font-size: 1.1em;
 }
 
 footer{
