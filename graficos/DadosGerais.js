@@ -10,7 +10,7 @@ async function visualizarInfos() {
 
     const paragrafo = document.createElement("p")
     paragrafo.classList.add("caixa-grafico__texto")
-    paragrafo.innerHTML = `Essa pesquisa, buscou fazer um levantamento dos salgados mais consumidos nas cantinas das escola pelo mundo. Com o auxilio da inteligencia artificial, foi possivel concluir que o salgado ${SalgadosMais} ficou em primeiro lugar, com aproximadamente ${NumeroVotos} votos, o principal comentario arespeito do salgado foi: ${comentarios}`
+    paragrafo.innerHTML = `Essa pesquisa, buscou fazer um levantamento dos salgados mais consumidos nas cantinas das escola pelo mundo. Com o auxilio da inteligencia artificial, foi possivel concluir que o salgado <span>${SalgadosMais}</span> ficou em primeiro lugar, com aproximadamente <span>${NumeroVotos}</span> votos, o principal comentario arespeito do salgado foi: <span>${comentarios}</span>`
     const caixa = document.getElementById("caixa-grafico")
     caixa.appendChild(paragrafo)
 }
