@@ -55,13 +55,15 @@ nav a:hover {
 
 .caixa-grafico{
     margin: 5rem;
-}
-.caixa-grafico__texto{
     font-size: 1.5em;
     background-color: var(--laranja);
     padding: 1em;
     border-radius: 20px;
     border: var(--branco-prata) double 10px;
+}
+.caixa-grafico__texto{
+    font-size: 1.5em;
+    padding: 2em 0 2.5em 0;
 }
 
 span{
