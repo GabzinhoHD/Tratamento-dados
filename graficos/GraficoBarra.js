@@ -23,7 +23,7 @@ async function criargraficoBarra() {
             text: "Os salgados mais consumidos",
             font:{
                 color: pegarCss("--azul-escuro"),
-                family: pegarCss("azul-escuro"),
+                family: pegarCss("--fonte-texto"),
                 size: 50
             }
         },
