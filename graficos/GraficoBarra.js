@@ -3,12 +3,12 @@ async function criargraficoBarra() {
     const url = "https://raw.githubusercontent.com/GabzinhoHD/Banco-de-dados-EX/refs/heads/main/dadosbarra.json"
     const res = await fetch(url)
     const dados = await res.json()
-    const salgados = Object.keys(dados)
+    const bebidas = Object.keys(dados)
     const votos = Object.values(dados)
 
     const data = [
         {
-            x: salgados,
+            x: bebidas,
             y: votos,
             type: "bar",
             marker: {
@@ -19,6 +19,8 @@ async function criargraficoBarra() {
     const layout = {
         plot_bgcolor: pegarCss("--azul-claro"),
         paper_bgcolor: pegarCss("--laranja"),
+        width: 1000,
+        height: 600,
         title:{
             text: "Os salgados mais consumidos",
             font:{

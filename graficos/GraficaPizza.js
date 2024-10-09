@@ -1,16 +1,15 @@
 import { pegarCss } from "./comum.js";
 
 async function criarGraficoPizza() {
-    
-    const url = 'https://raw.githubusercontent.com/SNOWFORSE/json/refs/heads/main/grafico.json';
+    const url = "https://raw.githubusercontent.com/GabzinhoHD/Banco-de-dados-EX/refs/heads/main/dadosbarra.json";
     const res = await fetch(url);
     const dados = await res.json();
-    const salgados = Object.keys(dados)
+    const bebidas = Object.keys(dados)
     const votos = Object.values(dados)
 
     const data = [
         {
-            keys: salgados,
+            labels: bebidas,
             values: votos,
             type: 'pie',
             textinfo: "label + percent"
@@ -18,10 +17,10 @@ async function criarGraficoPizza() {
     ];
 
     const layout = {
-        plot_bgcolor: pegarCss('--laranja'),
-        paper_bgcolor: pegarCss('--sage'),
-        height: 400,
-        width: 600
+        plot_bgcolor: pegarCss('--azul-escuro'),
+        paper_bgcolor: pegarCss('--laranja'),
+        width: 600,
+        height: 400
         
     };
 
